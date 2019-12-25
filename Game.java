@@ -1,17 +1,18 @@
-public class Skater{
-  public String owner;
-  public String name;
-  public String id;
-  public int age;
+public class SkaterGame{
+  public int dateYear;
+  public int dateMonth;
+  public int dateDay;
+  public int gameNumber;
+  public int ageYear;
+  public int ageDay;
   public String team;
-  public String position;
-  public int gamesPlayed;
+  public String opponent;
+  public char outcome;
   public int goals;
   public int assists;
   public int points;
   public int plusMinus;
   public int penaltiesInMinutes;
-  public double pointShares;
   public int evenStrengthGoals;
   public int powerPlayGoals;
   public int shortHandedGoals;
@@ -21,18 +22,12 @@ public class Skater{
   public int shortHandedAssists;
   public int shotsOnGoal;
   public double shootingPercentage;
-  public int totalShotAttempts;
-  public double timeOnIce;
-  public double averageTimeOnIce;
+  public int shifts;
+  public int timeOnIce;
+  public int hits;
+  public int blocks;
   public int faceOffWins;
   public int faceOffLosses;
   public double faceOffPercentage;
-  public int blocks;
-  public int hits;
-  public int takeaways;
-  public int giveaways;
-
-  public SkaterGame[] games;
-
 
 }
