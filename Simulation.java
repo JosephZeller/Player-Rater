@@ -8,6 +8,8 @@ public class Simulation{
     int roll = 0;
     int[] winning = {1,1,1,1,1,1,1,1,1,1,1};
     boolean balanced = false;
+    int[] bestArray = new int[11];
+    int bestOutlier = 100000;
     while(!balanced){
       for(int i=0; i<110000; i++){
         while(flag){
@@ -47,6 +49,20 @@ public class Simulation{
           System.out.print("Index " + j + ": " + winning[j] + ", ");
         }
         System.out.print("Outlier: " + max + " at " + maxIndex);
+        System.out.print("\n");
+        if(max < bestOutlier){
+          bestOutlier = max;
+
+          for(int m=0; m<bestArray.length; m++){
+            bestArray[m] = winning[m];
+          }
+
+        }
+        System.out.print("Best");
+        for(int m=0; m<bestArray.length; m++){
+          System.out.print("Index " + m + ": " + bestArray[m] + ", ");
+        }
+        System.out.print("Outlier: " + bestOutlier);
         System.out.print("\n");
       }
     }
